@@ -13,3 +13,4 @@ Steps to take with this repository:
 * Execute the `skaffold dev ...` command provided on the sandbox detailed view
   page to build and deploy the application in the remote cluster sandbox
 * Proceed to build your awesome Nodejs application
+* Learn how to set up debugger: https://nodejs.org/en/docs/guides/debugging-getting-started/
