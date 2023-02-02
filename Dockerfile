@@ -18,5 +18,5 @@ ENTRYPOINT npm run dev
 # we will not use npm in production as it wants to write on the container filesystem. this should be prohibited on production. however, we need to allow it while developing.
 FROM dev AS prod
 RUN npm install --production
-ENTRYPOINT node server.js
+ENTRYPOINT node app.js
 
