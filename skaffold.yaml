@@ -14,10 +14,4 @@ build:
   artifacts:
   - image: hello-nodejs
 
-  # Comment following lines below to build locally
-  # Note you also need to fetch Docker registry credentials
-  # by following instructions provided at dashboard.codemowers.eu
-  cluster:
-    dockerConfig:
-      secretName: kaniko-secret
 
