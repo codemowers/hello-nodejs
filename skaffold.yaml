@@ -13,5 +13,19 @@ deploy:
 build:
   artifacts:
   - image: hello-nodejs
+    docker:
+      target: dev
+    sync:
+      manual:
+        - src: '*.js'
+          dest: .
 
-
+portForward:
+  - resourceType: deployment
+    resourceName: hello-nodejs
+    port: 3000 # Express.js server itself
+    localPort: 3000
+  - resourceType: deployment
+    resourceName: hello-nodejs
+    port: 9229 # Debug port
+    localPort: 9229
