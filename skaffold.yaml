@@ -13,12 +13,18 @@ deploy:
 build:
   artifacts:
   - image: hello-nodejs
-    docker:
-      target: dev
+    #docker:
+    #  target: dev
     sync:
       manual:
         - src: '*.js'
           dest: .
+    # Comment following lines below to build locally
+    # Note you also need to fetch Docker registry credentials
+    # by following instructions provided at dashboard.codemowers.eu
+  cluster:
+    dockerConfig:
+      secretName: kaniko
 
 portForward:
   - resourceType: deployment
