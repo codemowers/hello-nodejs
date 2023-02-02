@@ -1,7 +1,6 @@
 # Hello cloud native Nodejs
 
-In this example skeleton Nodejs application is provided with Prometheus
-metrics endpoint.
+In this example skeleton Nodejs application is provided.
 
 Steps to take with this repository:
 
@@ -10,6 +9,7 @@ Steps to take with this repository:
 * Obtain sandbox environment from https://dashboard.codemowers.eu/
 * Follow the instructions on the page regarding `~/.kube/config` reconfiguration
 * Follow the instructions regarding `docker login harbor.codemowers.eu`
+* Adjust sandbox name `3nk45yqd6e` in `deployment.yaml` as necessary for your sandbox
 * Execute the `skaffold dev ...` command provided on the sandbox detailed view
   page to build and deploy the application in the remote cluster sandbox
 * Proceed to build your awesome Nodejs application
