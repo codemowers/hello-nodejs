@@ -9,6 +9,7 @@ Steps to take with this repository:
 * Clone the forked repository to your machine
 * Obtain sandbox environment from https://dashboard.codemowers.eu/
 * Follow the instructions on the page regarding `~/.kube/config` reconfiguration
+* Follow the instructions regarding `docker login harbor.codemowers.eu`
 * Execute the `skaffold dev ...` command provided on the sandbox detailed view
   page to build and deploy the application in the remote cluster sandbox
 * Proceed to build your awesome Nodejs application
